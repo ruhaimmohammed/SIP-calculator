@@ -139,4 +139,12 @@ img{
     img{
         width: 331px;
     }
+    #range{
+        width: 73%;
+      }
+      #btn{
+        font-size: 19px;
+        width: 18%;
+
+    }
 }
