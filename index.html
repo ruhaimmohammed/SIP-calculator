@@ -5,32 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SIP Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="SIP.PNG" type="image/icon type" sizes="240*14">
 </head>
 <body>
-    <h1>SIP Calculator</h1>
-    <form>
-    <table >
-        <tr>
-            <th>Enter the amount your are going to invest per month</th>
-            <td><input id="amount" type="number" placeholder="Amount"> </td>
+    <div class="body">
+        <div id="div-1">
+    <div id="head"><h1>WELCOME FUTURE MILLIONAIRE 😁😁</h1></div> 
+    <table>
+        <tr class="label-container">
+                <th class="label">Enter the amount your are going to invest per month :</th>
         </tr>
         <tr>
-            <th>Enter the time period of investment</th>
-            <td><input id="year" type="number" min="2" max="50" placeholder="In years"> </td>
+             <td class="input-container"><input id="amount" class="form-field" name="amount" type="number" placeholder="Amount"> </td>
+        </tr>
+        <tr class="label-container">
+                <th class="label">Enter the time period of investment :</th>
         </tr>
         <tr>
-            <th>Enter the return on investment you are expecting</th>
-            <td><span><input id="range" type="range" min="5" max="30" placeholder="In percentage"></span><span id="range-value"></span><span> %</span> </td>
+            <td class="input-container"><input id="year" class="form-field" name="year" type="number" min="2" max="50" placeholder="In years"> </td>
+        </tr>
+        <tr class="label-container">
+                <th class="label">Enter the return on investment you are expecting :</th>
+        </tr>
+        <tr>
+            <td class="input-container"><span id="range-container"><input id="range" class="form-field" name="range" type="range" min="5" max="50" placeholder="In percentage"></span><span class="per" id="range-value"></span><span class="per"> %</span> </td>
         </tr>
         <tr align="center">
-            <td colspan="2"><input onclick="calculator()" type="button" value="OK"> </td>
+            <td colspan="2"><input id="btn" onclick="calculator()" type="button" value="OK"> </td>
         </tr>
         <tr>
+
             <td id="invested-amount"> </td>
+
+        </tr>
+        <tr>
+
             <td id="returns"> </td>
+
+        </tr>
+        <tr>
+
+            <td id="applause"> </td>
+
         </tr>
     </table>
-</form>
+</div>
+<div class="div-logo">
+    <img src="SIP Calculator Logo.png" alt="Logo">
+</div>
+</div>
 <script src="script.js"></script>
 </body>
 </html>
