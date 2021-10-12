@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIP Calculator</title>
+</head>
+<body>
+    <h1>SIP Calculator</h1>
+    <form>
+    <table >
+        <tr>
+            <th>Enter the amount your are going to invest per month</th>
+            <td><input id="amount" type="number" placeholder="Amount"> </td>
+        </tr>
+        <tr>
+            <th>Enter the time period of investment</th>
+            <td><input id="year" type="number" min="2" max="50" placeholder="In years"> </td>
+        </tr>
+        <tr>
+            <th>Enter the return on investment you are expecting</th>
+            <td><span><input id="range" type="range" min="5" max="30" placeholder="In percentage"></span><span id="range-value"></span><span> %</span> </td>
+        </tr>
+        <tr align="center">
+            <td colspan="2"><input onclick="calculator()" type="button" value="OK"> </td>
+        </tr>
+        <tr>
+            <td id="invested-amount"> </td>
+            <td id="returns"> </td>
+        </tr>
+    </table>
+</form>
+<script src="script.js"></script>
+</body>
+</html>
